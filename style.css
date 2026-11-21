@@ -1,0 +1,130 @@
+
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+/* JUDUL */
+h1 {
+    color: #173f75;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+
+/* LINK */
+a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* TOMBOL TAMBAH */
+.main > p a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th {
+    background-color: #173f75;
+    color: white;
+    padding: 13px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f5fa;
+}
+
+/* GAMBAR */
+table img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+/* FORM INPUT */
+.input {
+    margin-bottom: 18px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.input input,
+.input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* TOMBOL SIMPAN */
+.submit input {
+    background-color: #173f75;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit input:hover {
+    background-color: #2563eb;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
